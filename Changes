@@ -1,5 +1,8 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.07  Sat Nov 13 16:31:56 PST 2004
+	update documentation
+
 0.06  Sat Sep 20 16:06:21 PDT 2003
 	managed to release a debug version as 0.05
 	debug code removed
