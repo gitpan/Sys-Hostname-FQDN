@@ -1,5 +1,9 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.04  Tue Aug 19 15:29:55 PDT 2003
+	include resolv.h and -lresolv
+	for solaris, remove solaris hints.
+
 0.03  Mon Aug 11 09:47:50 PDT 2003
 	include Solaris 'hints'
 

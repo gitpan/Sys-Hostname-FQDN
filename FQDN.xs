@@ -9,6 +9,7 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <arpa/inet.h>
+#include <resolv.h>
 
 /* from /usr/include/arpa/nameser.h	*/
 #define NS_MAXDNAME	1025	/* maximum domain name */
