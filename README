@@ -1,0 +1,35 @@
+NAME
+      Sys::Hostname::FQDN
+
+SYNOPSIS
+      use Sys::Hostname::FQDN qw(
+            asciihostinfo
+            gethostinfo
+            inet_ntoa
+            inet_aton
+            long
+            short
+      );
+
+      $host = short();
+      $fqdn = long();
+      ($name,$aliases,$addrtype,$length,@addrs)=gethostinfo();
+      ($name,$aliases,$addrtype,$length,@addrs)=asciihostinfo();
+      $dotquad = inet_ntoa($netaddr);
+      $netaddr = inet_aton($dotquad);
+
+INSTALLATION
+    To install this module type the following:
+
+      perl Makefile.PL
+      make
+      make test
+      make install
+
+DEPENDENCIES
+      none
+
+LICENSE
+      GPL
+
+Copyright 2003, Michael Robinton <michael@bizsystems.com>

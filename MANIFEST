@@ -1,0 +1,9 @@
+Changes
+FQDN.pm
+FQDN.xs
+GPL
+MANIFEST
+Makefile.PL
+README
+t/hostinfo.t
+t/inet_xton.t
