@@ -7,7 +7,7 @@ use Carp;
 
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = do { my @r = (q$Revision: 0.01 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.02 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 require Exporter;
 require DynaLoader;
@@ -89,7 +89,7 @@ __END__
 
 =head1 NAME
 
-  Sys::Hostname::FQDN
+  Sys::Hostname::FQDN - Get the short or long hostname
 
 =head1 SYNOPSIS
 
