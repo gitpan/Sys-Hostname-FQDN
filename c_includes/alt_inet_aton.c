@@ -159,7 +159,6 @@ my_inet_aton(register const char *cp, struct in_addr *addr)
 	addr->s_addr = htonl(val);
 	return 1;
 }
-
-#else	/* HAS_INET_ATON	*/
-#define my_inet_aton inet_aton
+#undef inet_aton
+#define inet_aton my_inet_aton
 #endif	/* ! HAS_INET_ATON	*/
