@@ -1,6 +1,10 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
-0.04  Tue Aug 19 15:29:55 PDT 2003
+0.05  Tue Sep 16 18:40:02 PDT 2003
+	added alt_inet_aton for OS's that don't have inet_aton
+	this resolves the problem with Solaris.
+
+0.04  Tue Aug 19 15:29:55 PDT 2003 -- this didn't work
 	include resolv.h and -lresolv
 	for solaris, remove solaris hints.
 

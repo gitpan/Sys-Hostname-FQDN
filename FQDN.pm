@@ -7,11 +7,11 @@ use Carp;
 
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = do { my @r = (q$Revision: 0.04 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.05 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 require Exporter;
 require DynaLoader;
-use AutoLoader;
+#use AutoLoader;
 
 @ISA = qw(Exporter DynaLoader);
 
@@ -23,6 +23,8 @@ use AutoLoader;
 	fqdn
 	short
 );
+
+=pod
 
 sub AUTOLOAD {
     # This AUTOLOAD is used to 'autoload' constants from the constant()
@@ -56,6 +58,8 @@ sub AUTOLOAD {
     goto &$AUTOLOAD;
 }
 
+=cut
+
 bootstrap Sys::Hostname::FQDN $VERSION;
 
 # Preloaded methods go here.
@@ -84,12 +88,14 @@ sub asciihostinfo {
   return ($name,$aliases,$addrtype,$length,@addrs);
 }
 
-1;
-__END__
-
 =head1 NAME
 
   Sys::Hostname::FQDN - Get the short or long hostname
+
+=cut
+
+1;
+__END__
 
 =head1 SYNOPSIS
 
@@ -188,6 +194,12 @@ B<asciihostinfo> as a convenience since they are available. Similarly, the
   inet_aton
   fqdn
   short
+
+=head1 ACKNOWLEDGEMENTS
+
+The workaround for systems that do not have 'inet_aton' is taken directly
+from Socket.xs in the Perl 5 kit for perl-5.8.0 by Larry Wall, copyright
+1989-2002. Thank you Larry for making PERL possible for all of us.
 
 =head1 AUTHOR
 

@@ -6,6 +6,4 @@ WriteMakefile(
     'NAME'		=> 'Sys::Hostname::FQDN',
     'VERSION_FROM'	=> 'FQDN.pm', # finds $VERSION
     'clean'		=> { FILES	=> "$rbldaemon *.o *~"},
-    'LIBS'		=> ['-lresolv'],
-
 );
