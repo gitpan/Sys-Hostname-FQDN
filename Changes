@@ -1,5 +1,8 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.03  Mon Aug 11 09:47:50 PDT 2003
+	include Solaris 'hints'
+
 0.02  Fri Aug  8 18:08:50 PDT 2003
 	documentation update
 

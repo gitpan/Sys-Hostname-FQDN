@@ -7,7 +7,7 @@ use Carp;
 
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = do { my @r = (q$Revision: 0.02 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.03 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 require Exporter;
 require DynaLoader;
@@ -117,6 +117,9 @@ To install this module type the following:
   make
   make test
   make install
+
+Solaris users, see the 'hints' subdirectory if you have problems with the
+build.
 
 =head1 DESCRIPTION
 

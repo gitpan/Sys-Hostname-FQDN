@@ -5,5 +5,6 @@ GPL
 MANIFEST
 Makefile.PL
 README
+hints/solaris_2.pl
 t/hostinfo.t
 t/inet_xton.t
