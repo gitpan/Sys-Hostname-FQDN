@@ -1,5 +1,13 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.09  Mon Oct  6 13:38:16 PDT 2008
+	update socket headers from perl Socket 5.9.3
+
+0.08  Mon Oct  2 09:31:58 PDT 2006
+	incorporated header patch for build with ActiveState 
+	perl v5.8.7 built for MSWin32-x86-multi-thread
+	Thanks to Alexandr Ciornii, http://chorny.net
+
 0.07  Sat Nov 13 16:31:56 PST 2004
 	update documentation
 

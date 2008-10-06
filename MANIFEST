@@ -8,3 +8,4 @@ README
 c_includes/alt_inet_aton.c
 t/hostinfo.t
 t/inet_xton.t
+META.yml                                 Module meta-data (added by MakeMaker)
