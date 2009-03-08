@@ -1,5 +1,8 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.10  Sat Mar  7 17:49:24 PST 2009
+	clean up prototype mismatchs for char/uchar
+
 0.09  Mon Oct  6 13:38:16 PDT 2008
 	update socket headers from perl Socket 5.9.3
 

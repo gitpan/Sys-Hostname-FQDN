@@ -87,7 +87,7 @@ inet_ntoa(netaddr)
 	    char * addr;
 	} naddr;
     PPCODE:
-	naddr.addr = (unsigned char *)(SvPV(netaddr, len));
+	naddr.addr = (SvPV(netaddr, len));
 	out = sv_newmortal();
 	out = newSVpv(inet_ntoa(*naddr.inadr),0);
 	ST(0) = out;
@@ -107,8 +107,8 @@ inet_aton(dotquad)
 	struct in_addr myaddr;
     PPCODE:
 	dq = (unsigned char *)(SvPV(dotquad, len));
-	inet_aton(dq,&myaddr);
+	inet_aton((char *)dq,&myaddr);
 	out = sv_newmortal();
-	out = newSVpv((u_char *)&myaddr.s_addr,4);
+	out = newSVpv((char *)&myaddr.s_addr,4);
 	ST(0) = out;
 	XSRETURN(1);
