@@ -1,5 +1,8 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.11  Mon Nov 15 10:38:56 PST 2010
+	Added "Artistic" licensing
+
 0.10  Sat Mar  7 17:49:24 PST 2009
 	clean up prototype mismatchs for char/uchar
 

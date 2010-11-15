@@ -7,7 +7,7 @@ use Carp;
 
 use vars qw($VERSION @ISA @EXPORT_OK);
 
-$VERSION = do { my @r = (q$Revision: 0.10 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
+$VERSION = do { my @r = (q$Revision: 0.11 $ =~ /\d+/g); sprintf "%d."."%02d" x $#r, @r };
 
 require Exporter;
 require DynaLoader;
@@ -171,20 +171,28 @@ Michael Robinton <michael@bizsystems.com>
 
 =head1 COPYRIGHT AND LICENCE
 
-  Copyright 2003, Michael Robinton <michael@bizsystems.com>
+  Copyright 2003-2010, Michael Robinton <michael@bizsystems.com>
  
-  This program is free software; you can redistribute it and/or modify
-  it under the terms of the GNU General Public License as published by
-  the Free Software Foundation; either version 2 of the License, or
-  (at your option) any later version.
+This module is free software; you can redistribute it and/or modify it
+under the terms of either:
 
-  This program is distributed in the hope that it will be useful,
-  but WITHOUT ANY WARRANTY; without even the implied warranty of
-  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-  GNU General Public License for more details.
+  a) the GNU General Public License as published by the Free Software
+  Foundation; either version 1, or (at your option) any later version,
+  
+  or
 
-  You should have received a copy of the GNU General Public License
-  along with this program; if not, write to the Free Software
-  Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA 02111-1307, USA. 
+  b) the "Artistic License" which comes with this module.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of 
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See either
+the GNU General Public License or the Artistic License for more details.
+
+You should have received a copy of the Artistic License with this
+module, in the file ARTISTIC.  If not, I'll be glad to provide one.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 02111-1307 USA
 
 =cut
