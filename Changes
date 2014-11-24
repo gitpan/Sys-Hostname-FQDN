@@ -1,5 +1,8 @@
 Revision history for Perl extension Sys::Hostname::FQDN
 
+0.12 Mon Nov 24 08:29:23 PST 2014
+	squashed memory leak - thanks to Jiro Nishiquchi
+
 0.11  Mon Nov 15 10:38:56 PST 2010
 	Added "Artistic" licensing
 

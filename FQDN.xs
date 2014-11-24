@@ -70,8 +70,7 @@ usually_short()
 	  ST(0) = &PL_sv_undef;
 	}
 	else {
-	  out = sv_newmortal();
-	  out = newSVpv(local_name,0);
+	  out = sv_2mortal(newSVpv(local_name,0));
 	  ST(0) = out;
 	}
 	XSRETURN(1);
@@ -88,8 +87,7 @@ inet_ntoa(netaddr)
 	} naddr;
     PPCODE:
 	naddr.addr = (SvPV(netaddr, len));
-	out = sv_newmortal();
-	out = newSVpv(inet_ntoa(*naddr.inadr),0);
+	out = sv_2mortal(newSVpv(inet_ntoa(*naddr.inadr),0));
 	ST(0) = out;
 	XSRETURN(1);
 
@@ -108,7 +106,6 @@ inet_aton(dotquad)
     PPCODE:
 	dq = (unsigned char *)(SvPV(dotquad, len));
 	inet_aton((char *)dq,&myaddr);
-	out = sv_newmortal();
-	out = newSVpv((char *)&myaddr.s_addr,4);
+	out = sv_2mortal(newSVpv((char *)&myaddr.s_addr,4));
 	ST(0) = out;
 	XSRETURN(1);
